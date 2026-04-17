@@ -1,0 +1,22 @@
+# Dossier de compilation Java
+bin/
+
+# Fichiers Java compilés
+*.class
+
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Configuration IDE
+.idea/
+.vscode/
+.settings/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fichiers de sortie générés
+data/resultats.csv
