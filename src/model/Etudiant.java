@@ -21,17 +21,47 @@ public class Etudiant {
     }
 
     public double calculerMoyenne() {
-        if (notes.isEmpty()) return 0;
+        if (notes.isEmpty()) {
+            return 0;
+        }
+
         double somme = 0;
-        for (double n : notes) somme += n;
+        for (double note : notes) {
+            somme += note;
+        }
+
         return somme / notes.size();
+    }
+
+    public double getMoyenne() {
+        return calculerMoyenne();
     }
 
     public String getNomComplet() {
         return prenom + " " + nom;
     }
 
-    public double getMoyenne() {
-        return calculerMoyenne();
+    public int getId() {
+        return id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public List<Double> getNotes() {
+        return notes;
+    }
+
+    @Override
+    public String toString() {
+        return "Etudiant{id=" + id +
+                ", nomComplet='" + getNomComplet() + '\'' +
+                ", moyenne=" + String.format("%.2f", getMoyenne()) +
+                '}';
     }
 }
