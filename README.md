@@ -24,5 +24,3 @@ Il permet de calculer la moyenne de chaque étudiant, de les classer par ordre d
 - Gestion basique des erreurs (fichier manquant, format incorrect)
 
 ---
-
-## 🗂️ Structure du projet
