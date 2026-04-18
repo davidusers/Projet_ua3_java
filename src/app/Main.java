@@ -1,26 +1,29 @@
 package app;
 
-import service.*;
-import model.*;
-import java.util.*;
+import model.Etudiant;
+import service.CSVReader;
+import service.EtudiantService;
+
+import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("--- Programme de Gestion des Étudiants ---");
 
-        Map<Integer, Etudiant> etudiants =
-            CSVReader.lireCSV("data/etudiants.csv");
+        try {
+            Map<Integer, Etudiant> etudiants =
+                    CSVReader.lireCSV("data/etudiants.csv");
 
-        List<Etudiant> classes =
-            EtudiantService.trierParMoyenne(etudiants.values());
+            List<Etudiant> etudiantsTries =
+                    EtudiantService.trierParMoyenne(etudiants.values());
 
-        // ✅ Affichage dans le terminal
-        EtudiantService.afficherDansTerminal(classes);
+            EtudiantService.afficherDansTerminal(etudiantsTries);
+            EtudiantService.sauvegarder(etudiantsTries, "data/resultats.csv");
 
-        // ✅ Sauvegarde dans un fichier
-        EtudiantService.sauvegarder(classes, "data/resultats.csv");
-
-        System.out.println("\nTraitement terminé.");
+            System.out.println("\nTraitement terminé.");
+        } catch (Exception e) {
+            System.out.println("Une erreur est survenue : " + e.getMessage());
+        }
     }
 }
