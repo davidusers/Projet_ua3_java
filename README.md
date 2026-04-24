@@ -1,20 +1,20 @@
 Projet Java – Gestion des Étudiants
 # Gestion des Étudiants – Projet Java
 
-## 📌 Description du projet
+## Description du projet
 Ce projet Java a pour objectif de gérer des étudiants, leurs cours et leurs notes à partir d’un fichier CSV.  
 Il permet de calculer la moyenne de chaque étudiant, de les classer par ordre décroissant et de sauvegarder les résultats dans un fichier de sortie.
 
 ---
 
-## 👥 Membres du groupe
+## Membres du groupe
 - Nom Prénom –DZOGANG DAVID STEPHANE: Lecture CSV, structure du projet,Sauvegarde des résultats
 - Nom Prénom –DOLI, OLLEISK: Calcul des moyennes, tri
 
 
 ---
 
-## ✅ Fonctionnalités développées
+## Fonctionnalités développées
 - Lecture des données des étudiants depuis un fichier CSV
 - Gestion des étudiants et de leurs notes
 - Calcul automatique de la moyenne pour chaque étudiant
