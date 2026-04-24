@@ -8,9 +8,9 @@ Il permet de calculer la moyenne de chaque étudiant, de les classer par ordre d
 ---
 
 ## Membres du groupe
-- Nom Prénom –DZOGANG DAVID STEPHANE: Lecture CSV, structure du projet,Sauvegarde des résultats
-- Nom Prénom –DOLI, OLLEISK: Calcul des moyennes, tri
-
+- Nom Prénom – DZOGANG, DAVID STEPHANE: Lecture CSV, structure du projet et Sauvegardes des résultats
+- Nom Prénom – DOLI, OLLEISK: Calcul des moyennes et tri
+- Nom Prénom - BOUCHER, NOAH: README et aide avec les petites erreurs.
 
 ---
 
